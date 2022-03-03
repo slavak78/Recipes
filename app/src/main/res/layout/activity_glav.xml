@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    tools:openDrawer="start"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/drawer_layout1"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="0dp"
+    app:elevation="0dp">
+
+
+    <include layout="@layout/app_bar_glav"/>
+
+    <ru.slava.recipes.CustomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:backgroundTint="@android:color/transparent"
+        android:elevation="0dp"
+        >
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:backgroundTint="@color/white_50"
+        app:tint="@color/ed3851"
+        android:src="@drawable/close"
+        app:elevation="0dp"
+        app:borderWidth="0dp"
+        android:contentDescription="@string/close"
+        android:layout_marginBottom="50dp"/>
+    </ru.slava.recipes.CustomNavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

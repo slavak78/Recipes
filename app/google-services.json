@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "732047353382",
+    "project_id": "recipes-e4c9f",
+    "storage_bucket": "recipes-e4c9f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732047353382:android:056c416b2bbb4a609628e7",
+        "android_client_info": {
+          "package_name": "ru.slava.recipes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "732047353382-15n0n3r044teqnul0qtglhsk04ddl22b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6tB7Vigv-xZomrft2WMOFvmPXw3qMkcs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "732047353382-15n0n3r044teqnul0qtglhsk04ddl22b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

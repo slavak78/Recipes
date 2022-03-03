@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp"
+        app:cardMaxElevation="0dp"
+        card_view:cardCornerRadius="5dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/dcdcdc"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+
+                <LinearLayout
+                    android:id="@+id/clicks"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <ru.slava.recipes.AvatarView.views.AvatarView
+                        android:id="@+id/avatar"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:av_border_color="@color/white_50"
+                        app:av_border_width="2dp"
+                        />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/fio"
+                        android:fontFamily="@font/sf_ui_text_bold"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textSize="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="0dp"
+                        android:textColor="@color/c1b1b1b"/>
+
+    <ru.slava.recipes.RelativeTimeTextView
+        android:id="@+id/ago"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+                </LinearLayout>
+                <ImageButton
+                    android:id="@+id/popup"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/ic_dots"
+                    android:background="@null"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/popup" />
+            </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/nophoto"
+                android:contentDescription="@string/photorecipe"/>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/fav"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/cornersall"
+                android:layout_gravity="end"
+                android:layout_marginTop="128dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgfav"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/like_gray"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/like"/>
+            </LinearLayout>
+
+        </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/view_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:visibility="gone"
+                android:layout_marginStart="10dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/star_yellow"
+                    android:contentDescription="@string/rate"
+                    android:layout_marginTop="3dp"/>
+                <TextView
+                    android:id="@+id/stars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"/>
+            </LinearLayout>
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_ui_text_bold"
+                    android:textAppearance="@style/TextAppearance.MyTheme.Headline5"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:maxLines="2"
+                    android:minLines="2"
+                    android:ellipsize="end"/>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

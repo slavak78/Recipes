@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ideas">
+
+    <fragment
+        android:id="@+id/ideas"
+        android:name="ru.slava.recipes.IdeasFragment"
+        android:label="@string/ideas"
+        tools:layout="@layout/fragment_ideas" >
+        <action
+            android:id="@+id/action_ideasFragment_to_viewRecipefragment"
+            app:destination="@id/viewrecipe" />
+        <action
+            android:id="@+id/action_ideas_to_viewusers"
+            app:destination="@id/viewusers" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/viewrecipe"
+        android:name="ru.slava.recipes.ViewRecipeFragment"
+        android:label=""
+        tools:layout="@layout/fragment_view_recipe" >
+        <argument
+            android:name="idd"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_viewrecipe_to_viewuser"
+            app:destination="@id/viewuser" />
+        <action
+            android:id="@+id/action_viewrecipe_to_shareFragment"
+            app:destination="@id/share" />
+        <action
+            android:id="@+id/action_viewrecipe_to_chat"
+            app:destination="@id/chat" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/viewusers"
+        android:name="ru.slava.recipes.ViewUsersFragment"
+        android:label=""
+        tools:layout="@layout/fragment_view_users" >
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/news"
+        android:name="ru.slava.recipes.FriendsIdeasFragment"
+        android:label="@string/newfrom"
+        tools:layout="@layout/fragment_friendsideas" />
+    <fragment
+        android:id="@+id/viewuser"
+        android:name="ru.slava.recipes.ViewUserFragment"
+        android:label="fragment_view_user"
+        tools:layout="@layout/fragment_view_user" >
+        <argument
+            android:name="idd"
+            app:argType="string" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/search"
+        android:name="ru.slava.recipes.SearchFragment"
+        android:label="@string/search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_viewsearch_to_viewrecipe"
+            app:destination="@id/viewrecipe" />
+    </fragment>
+    <fragment
+        android:id="@+id/share"
+        android:name="ru.slava.recipes.ShareFragment"
+        android:label="@string/share"
+        tools:layout="@layout/fragment_share" >
+        <argument
+            android:name="idd"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/chat"
+        android:name="ru.slava.recipes.ChatFragment"
+        android:label="@string/chat"
+        tools:layout="@layout/fragment_chat" >
+        <argument
+            android:name="idd"
+            app:argType="string" />
+        <argument
+            android:name="token"
+            app:argType="string" />
+    </fragment>
+
+
+</navigation>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="10dp"
+    android:id="@+id/container"
+    xmlns:mask="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="70dp"
+            android:fontFamily="@font/sf_ui_text_bold"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.MyTheme.Headline5"
+            android:textAllCaps="true"
+ />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textAppearance="@style/TextAppearance.MyTheme.Body2"
+            android:text="@string/auth" />
+
+
+
+
+
+        <ru.slava.recipes.maskedEditText.MaskedEditText
+            android:id="@+id/tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:digits="0123456789"
+            mask:mask="+7 (###) ###-##-##"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:textAppearance="@style/TextAppearance.MyTheme.Headline5"
+            />
+
+        <Button
+            android:id="@+id/nextstep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nextstep"
+            style="@style/button_text"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/uslovia"
+        app:layout_anchor="@+id/linearLayout"
+        app:layout_anchorGravity="bottom|center"
+        android:textAppearance="@style/TextAppearance.MyTheme.Body2"
+        android:layout_marginBottom="20dp"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

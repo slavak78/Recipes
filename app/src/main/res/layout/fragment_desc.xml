@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<com.google.android.material.appbar.CollapsingToolbarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+    app:contentScrim="@color/white_50">
+
+    <ImageView
+        android:id="@+id/photorecipe"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:contentDescription="@string/photorecipe"
+        android:src="@drawable/nophoto"
+        android:scaleType="centerCrop"
+        app:layout_collapseMode="parallax"
+        app:layout_collapseParallaxMultiplier="0.8"/>
+
+</com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+</com.google.android.material.appbar.AppBarLayout>
+
+      <androidx.core.widget.NestedScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:paddingBottom="50dp"
+          android:layout_marginTop="-20dp"
+          android:fillViewport="true"
+          app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="10dp"
+          android:orientation="vertical"
+          android:layout_marginStart="20dp"
+          android:layout_marginEnd="20dp"
+          android:background="@drawable/corners80"
+          />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:background="@drawable/corners">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/sec"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/alarm"
+            android:layout_gravity="center"
+            android:contentDescription="@string/sec"/>
+
+    <TextView
+        android:id="@+id/times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_gravity="center"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/title"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_ui_text_bold"
+        android:textAppearance="@style/TextAppearance.MyTheme.Headline5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+    <RatingBar
+        android:id="@+id/stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:progressTint="@color/star"
+        android:secondaryProgressTint="@color/star"
+        android:stepSize="0.1"
+        android:isIndicator="true"
+        android:layout_marginTop="1dp"
+        style="?android:attr/ratingBarStyleSmall" />
+
+        <TextView
+            android:id="@+id/points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/c1b1b1b"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/cli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp">
+
+
+            <ru.slava.recipes.AvatarView.views.AvatarView
+                android:id="@+id/avatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="10dp"
+                app:av_border_color="@color/white_50"
+                app:av_border_width="2dp"
+                />
+
+            <TextView
+                android:id="@+id/fio"
+                android:fontFamily="@font/sf_ui_text_bold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="16sp"
+                android:textColor="@color/c1b1b1b"/>
+        </LinearLayout>
+
+
+    <ru.slava.recipes.Ads.TemplateView
+        android:id="@+id/temp_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:gnt_template_type="@layout/gnt_medium_template_view"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:paddingBottom="10dp"/>
+
+    <Button
+        android:id="@+id/buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/button_text"
+        android:layout_gravity="center"
+        android:text="@string/buy"/>
+</LinearLayout>
+          </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+  </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+

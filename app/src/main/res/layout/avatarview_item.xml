@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+
+<ru.slava.recipes.AvatarView.views.AvatarView
+    android:id="@+id/avatar1"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:av_border_color="@color/white_50"
+    app:av_border_width="2dp"/>
+
+
+    <ru.slava.recipes.AvatarView.views.AvatarView
+        android:id="@+id/avatar2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:av_border_color="@color/white_50"
+        app:av_border_width="2dp"
+        android:layout_marginStart="10dp"/>
+
+
+    <ru.slava.recipes.AvatarView.views.AvatarView
+        android:id="@+id/avatar3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:av_border_color="@color/white_50"
+        app:av_border_width="2dp"
+        android:layout_marginStart="10dp"/>
+
+    <ru.slava.recipes.AvatarView.views.AvatarView
+        android:id="@+id/avatar4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:av_border_color="@color/white_50"
+        app:av_border_width="2dp"
+        android:layout_marginStart="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/cornersplus"
+        android:layout_marginStart="10dp">
+        <TextView
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ed3851"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

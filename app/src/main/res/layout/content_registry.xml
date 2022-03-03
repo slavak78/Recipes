@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="10dp"
+    xmlns:mask="http://schemas.android.com/apk/res-auto"
+    tools:context=".RegistryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="70dp"
+            android:fontFamily="@font/sf_ui_text_bold"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.MyTheme.Headline5"
+            android:textAllCaps="true"
+ />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textAppearance="@style/TextAppearance.MyTheme.Body2"
+            android:text="@string/enter" />
+
+
+        <ru.slava.recipes.maskedEditText.MaskedEditText
+            android:id="@+id/num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            mask:mask="######"
+            android:digits="0123456789"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            android:textAppearance="@style/TextAppearance.MyTheme.Headline5"
+            />
+
+
+        <Button
+            android:id="@+id/endstep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/endstep"
+            style="@style/button_text"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone"/>
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progress_bar"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content" />
+
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

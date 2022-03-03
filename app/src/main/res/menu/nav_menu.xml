@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/ideas"
+        android:icon="@drawable/ideas_selector"
+        android:title="@string/ideas"
+        app:showAsAction="always"
+        android:actionLayout="@layout/ideas_layout"
+       />
+
+    <item
+        android:id="@+id/news"
+        android:icon="@drawable/news"
+        android:title="@string/newfrom" />
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/search"
+        android:title="@string/search" />
+
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/add"
+        android:title="@string/add" />
+
+    <item
+        android:id="@+id/chat"
+        android:icon="@drawable/chart"
+        android:title="@string/chat" />
+
+    <item
+        android:id="@+id/person"
+        android:icon="@drawable/user"
+        android:title="@string/person" />
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/logout"
+        android:title="@string/logout" />
+
+
+</menu>

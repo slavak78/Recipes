@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2019 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="40px" height="40px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 40 40"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:none}
+    .fil1 {fill:white;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0" x="-0.02" y="0.02" width="40" height="40"/>
+  <g id="cook-hat.svg">
+   <g>
+    <path class="fil1" d="M31.06 9.73c-0.76,-2.08 -2.12,-3.94 -3.89,-5.31 -2.08,-1.59 -4.56,-2.44 -7.19,-2.44 -2.62,0 -5.1,0.85 -7.18,2.44 -1.77,1.37 -3.13,3.23 -3.89,5.31 -4.62,0.09 -8.36,3.88 -8.36,8.53 0,2.22 0.86,4.33 2.41,5.93 1.28,1.33 2.93,2.19 4.73,2.48l0 4.2 24.59 0 0 -4.2c1.8,-0.29 3.45,-1.15 4.73,-2.48 1.55,-1.6 2.4,-3.71 2.4,-5.93 0,-4.65 -3.73,-8.44 -8.35,-8.53z"/>
+    <path class="fil1" d="M7.69 36.91c0,0.63 0.51,1.14 1.13,1.14l22.33 0c0.62,0 1.13,-0.51 1.13,-1.14l0 -3.76 -24.59 0 0 3.76z"/>
+   </g>
+  </g>
+ </g>
+</svg>
